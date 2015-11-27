@@ -72,12 +72,12 @@ namespace scr
 
             if (OrTest11 == false || OrTest12 == false || OrTest21 == false || OrTest22 == false)
             {
+                lblSvarOr.Text = "X";
+                lblSvarOr.ForeColor = Color.Black;
                 MessageBox.Show("Du måste skriva in antingen en etta eller nolla i båda rutorna, tack!", "Viktig information", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                lblSvarAnd.Text = "X";
-                lblSvarAnd.ForeColor = Color.Black;
             }
 
-            else if (Or1 == 1 || Or2 == 1)
+            else if ((Or1 == 1) || (Or2 == 1))
             {
                 lblSvarOr.Text = "1";
                 lblSvarOr.ForeColor = Color.Green;
@@ -106,19 +106,25 @@ namespace scr
             if (andTest11 == false || andTest12 == false || andTest21 == false || andTest22 == false)
             {
                 MessageBox.Show("Du måste skriva in antingen en etta eller nolla i båda rutorna, tack!", "Viktig information", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                lblSvarNand.Text = "X";
+                lblSvarNand.ForeColor = Color.Black;
             }
 
-            if (and1 == 1 && and2 == 1)
+            else if (and1 == 1 && and2 == 1)
             {
-                lblNandSvar.Text = "0";
-                lblNandSvar.ForeColor = Color.Red;
+                lblSvarNand.Text = "0";
+                lblSvarNand.ForeColor = Color.Red;
             }
             else
             {
-                lblNandSvar.Text = "1";
-                lblNandSvar.ForeColor = Color.Green;
+                lblSvarNand.Text = "1";
+                lblSvarNand.ForeColor = Color.Green;
             }
         }
 
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

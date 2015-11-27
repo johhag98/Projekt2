@@ -63,6 +63,16 @@ namespace scr.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Kopia_av_1nand {
+            get {
+                object obj = ResourceManager.GetObject("Kopia av 1nand", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Kopia_av_2or {
             get {
                 object obj = ResourceManager.GetObject("Kopia av 2or", resourceCulture);
