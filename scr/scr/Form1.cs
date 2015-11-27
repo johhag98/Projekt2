@@ -72,12 +72,12 @@ namespace scr
 
             if (OrTest11 == false || OrTest12 == false || OrTest21 == false || OrTest22 == false)
             {
-                lblSvarOr.Text = "X";
-                lblSvarOr.ForeColor = Color.Black;
                 MessageBox.Show("Du måste skriva in antingen en etta eller nolla i båda rutorna, tack!", "Viktig information", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                lblSvarAnd.Text = "X";
+                lblSvarAnd.ForeColor = Color.Black;
             }
 
-            else if ((Or1 == 1) || (Or2 == 1))
+            else if (Or1 == 1 || Or2 == 1)
             {
                 lblSvarOr.Text = "1";
                 lblSvarOr.ForeColor = Color.Green;
@@ -97,7 +97,7 @@ namespace scr
             bool andTest11 = int.TryParse(andText1, out and1);
             bool andTest12 = and1 == 1 || and1 == 0;
 
-            string andText2= tbxNand2.Text;
+            string andText2 = tbxNand2.Text;
             int and2;
             bool andTest21 = int.TryParse(andText2, out and2);
             bool andTest22 = and2 == 1 || and2 == 0;
@@ -106,25 +106,25 @@ namespace scr
             if (andTest11 == false || andTest12 == false || andTest21 == false || andTest22 == false)
             {
                 MessageBox.Show("Du måste skriva in antingen en etta eller nolla i båda rutorna, tack!", "Viktig information", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                lblSvarNand.Text = "X";
-                lblSvarNand.ForeColor = Color.Black;
             }
 
-            else if (and1 == 1 && and2 == 1)
+            if (and1 == 1 && and2 == 1)
             {
-                lblSvarNand.Text = "0";
-                lblSvarNand.ForeColor = Color.Red;
+                lblNandSvar.Text = "0";
+                lblNandSvar.ForeColor = Color.Red;
             }
             else
             {
-                lblSvarNand.Text = "1";
-                lblSvarNand.ForeColor = Color.Green;
+                lblNandSvar.Text = "1";
+                lblNandSvar.ForeColor = Color.Green;
             }
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
 
-        }
+
+        private void tbxAnd1_TextChanged(object sender, EventArgs e) { lblSvarAnd.Text = "?"; }
+        private void tbxAnd2_TextChanged(object sender, EventArgs e) { lblSvarAnd.Text = "?"; }
+        private void tbxNand1_TextChanged(object sender, EventArgs e) { lblSvarAnd.Text = "?"; }
+        private void tbxNand2_TextChanged(object sender, EventArgs e) { lblSvarAnd.Text = "?"; }
     }
 }
