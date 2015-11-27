@@ -21,13 +21,16 @@ namespace scr
         {
             string andText1 = tbxAnd1.Text;
             int and1;
-            bool andTest1 = int.TryParse(andText1, out and1);
-            bool andTest2 = and1 == 1 || and1 == 0;
+            bool andTest11 = int.TryParse(andText1, out and1);
+            bool andTest12 = and1 == 1 || and1 == 0;
 
-            int and2 = int.Parse(tbxAnd2.Text);
-            bool andTest12 = and2 == 1 || and2 == 0;
+            string andText2= tbxAnd2.Text;
+            int and2;
+            bool andTest21 = int.TryParse(andText1, out and2);
+            bool andTest22 = and2 == 1 || and2 == 0;
 
-            if (andTest2 == false || andTest2 == false || andTest1 == false)
+
+            if (andTest11 == false || andTest12 == false || andTest21 == false || andTest22 == false)
             {
                 MessageBox.Show("Du måste skriva in antingen en etta eller nolla i båda rutorna, tack!", "Viktig information", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
