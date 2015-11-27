@@ -144,8 +144,8 @@ namespace scr
 
         private void tbxAnd1_TextChanged(object sender, EventArgs e) { lblSvarAnd.Text = "?"; }
         private void tbxAnd2_TextChanged(object sender, EventArgs e) { lblSvarAnd.Text = "?"; }
-        private void tbxNand1_TextChanged(object sender, EventArgs e) { lblSvarAnd.Text = "?"; }
-        private void tbxNand2_TextChanged(object sender, EventArgs e) { lblSvarAnd.Text = "?"; }
+        private void tbxNand1_TextChanged(object sender, EventArgs e) { lblNandSvar.Text = "?"; }
+        private void tbxNand2_TextChanged(object sender, EventArgs e) { lblNandSvar.Text = "?"; }
         private void tbxOr1_TextChangeed(object sender, EventArgs e) { lblSvarOr.Text = "?"; }
         private void tbxOr2_TextChangeed(object sender, EventArgs e) { lblSvarOr.Text = "?"; }
         private void tbxNor1_TextChanged(object sender, EventArgs e) { lblSvarNor.Text = "?"; }
