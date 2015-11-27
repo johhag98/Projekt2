@@ -41,9 +41,24 @@
             this.tbxOr2 = new System.Windows.Forms.TextBox();
             this.tbxOr1 = new System.Windows.Forms.TextBox();
             this.lblSvarOr = new System.Windows.Forms.Label();
+            this.pbxNor = new System.Windows.Forms.PictureBox();
+            this.tbxNor2 = new System.Windows.Forms.TextBox();
+            this.tbxNor1 = new System.Windows.Forms.TextBox();
+            this.lblSvarNor = new System.Windows.Forms.Label();
+            this.pbxXor = new System.Windows.Forms.PictureBox();
+            this.tbxXor2 = new System.Windows.Forms.TextBox();
+            this.tbxXor1 = new System.Windows.Forms.TextBox();
+            this.lblSvarXor = new System.Windows.Forms.Label();
+            this.pbxXnor = new System.Windows.Forms.PictureBox();
+            this.tbxXnor1 = new System.Windows.Forms.TextBox();
+            this.tbxXnor = new System.Windows.Forms.TextBox();
+            this.lblSvarXnor = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbxAnd)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxNand)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxOr)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxNor)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxXor)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxXnor)).BeginInit();
             this.SuspendLayout();
             // 
             // tbxAnd1
@@ -120,7 +135,7 @@
             // pbxOr
             // 
             this.pbxOr.Image = ((System.Drawing.Image)(resources.GetObject("pbxOr.Image")));
-            this.pbxOr.Location = new System.Drawing.Point(43, 133);
+            this.pbxOr.Location = new System.Drawing.Point(43, 134);
             this.pbxOr.Name = "pbxOr";
             this.pbxOr.Size = new System.Drawing.Size(190, 120);
             this.pbxOr.TabIndex = 10;
@@ -134,6 +149,7 @@
             this.tbxOr2.Name = "tbxOr2";
             this.tbxOr2.Size = new System.Drawing.Size(25, 20);
             this.tbxOr2.TabIndex = 11;
+            this.tbxOr2.TextChanged += new System.EventHandler(this.tbxOr2_TextChangeed);
             // 
             // tbxOr1
             // 
@@ -142,6 +158,7 @@
             this.tbxOr1.Name = "tbxOr1";
             this.tbxOr1.Size = new System.Drawing.Size(25, 20);
             this.tbxOr1.TabIndex = 12;
+            this.tbxOr1.TextChanged += new System.EventHandler(this.tbxOr1_TextChangeed);
             // 
             // lblSvarOr
             // 
@@ -152,11 +169,134 @@
             this.lblSvarOr.TabIndex = 13;
             this.lblSvarOr.Text = "?";
             // 
+            // pbxNor
+            // 
+            this.pbxNor.Image = ((System.Drawing.Image)(resources.GetObject("pbxNor.Image")));
+            this.pbxNor.Location = new System.Drawing.Point(318, 134);
+            this.pbxNor.Name = "pbxNor";
+            this.pbxNor.Size = new System.Drawing.Size(188, 119);
+            this.pbxNor.TabIndex = 14;
+            this.pbxNor.TabStop = false;
+            this.pbxNor.Click += new System.EventHandler(this.pbxNor_Click);
+            // 
+            // tbxNor2
+            // 
+            this.tbxNor2.Location = new System.Drawing.Point(287, 205);
+            this.tbxNor2.MaxLength = 1;
+            this.tbxNor2.Name = "tbxNor2";
+            this.tbxNor2.Size = new System.Drawing.Size(25, 20);
+            this.tbxNor2.TabIndex = 15;
+            this.tbxNor2.TextChanged += new System.EventHandler(this.tbxNor2_TextChanged);
+            // 
+            // tbxNor1
+            // 
+            this.tbxNor1.Location = new System.Drawing.Point(287, 162);
+            this.tbxNor1.MaxLength = 1;
+            this.tbxNor1.Name = "tbxNor1";
+            this.tbxNor1.Size = new System.Drawing.Size(25, 20);
+            this.tbxNor1.TabIndex = 16;
+            this.tbxNor1.TextChanged += new System.EventHandler(this.tbxNor1_TextChanged);
+            // 
+            // lblSvarNor
+            // 
+            this.lblSvarNor.AutoSize = true;
+            this.lblSvarNor.Location = new System.Drawing.Point(512, 186);
+            this.lblSvarNor.Name = "lblSvarNor";
+            this.lblSvarNor.Size = new System.Drawing.Size(13, 13);
+            this.lblSvarNor.TabIndex = 17;
+            this.lblSvarNor.Text = "?";
+            // 
+            // pbxXor
+            // 
+            this.pbxXor.Image = ((System.Drawing.Image)(resources.GetObject("pbxXor.Image")));
+            this.pbxXor.Location = new System.Drawing.Point(43, 260);
+            this.pbxXor.Name = "pbxXor";
+            this.pbxXor.Size = new System.Drawing.Size(190, 118);
+            this.pbxXor.TabIndex = 18;
+            this.pbxXor.TabStop = false;
+            this.pbxXor.Click += new System.EventHandler(this.pbxXor_Click);
+            // 
+            // tbxXor2
+            // 
+            this.tbxXor2.Location = new System.Drawing.Point(12, 334);
+            this.tbxXor2.MaxLength = 1;
+            this.tbxXor2.Name = "tbxXor2";
+            this.tbxXor2.Size = new System.Drawing.Size(25, 20);
+            this.tbxXor2.TabIndex = 19;
+            this.tbxXor2.TextChanged += new System.EventHandler(this.tbxOr2_TextChangeed);
+            // 
+            // tbxXor1
+            // 
+            this.tbxXor1.Location = new System.Drawing.Point(12, 290);
+            this.tbxXor1.MaxLength = 1;
+            this.tbxXor1.Name = "tbxXor1";
+            this.tbxXor1.Size = new System.Drawing.Size(25, 20);
+            this.tbxXor1.TabIndex = 20;
+            this.tbxXor1.TextChanged += new System.EventHandler(this.tbxOr1_TextChangeed);
+            // 
+            // lblSvarXor
+            // 
+            this.lblSvarXor.AutoSize = true;
+            this.lblSvarXor.Location = new System.Drawing.Point(239, 313);
+            this.lblSvarXor.Name = "lblSvarXor";
+            this.lblSvarXor.Size = new System.Drawing.Size(13, 13);
+            this.lblSvarXor.TabIndex = 21;
+            this.lblSvarXor.Text = "?";
+            // 
+            // pbxXnor
+            // 
+            this.pbxXnor.Image = ((System.Drawing.Image)(resources.GetObject("pbxXnor.Image")));
+            this.pbxXnor.Location = new System.Drawing.Point(318, 260);
+            this.pbxXnor.Name = "pbxXnor";
+            this.pbxXnor.Size = new System.Drawing.Size(188, 118);
+            this.pbxXnor.TabIndex = 22;
+            this.pbxXnor.TabStop = false;
+            this.pbxXnor.Click += new System.EventHandler(this.pbxXnor_Click);
+            // 
+            // tbxXnor1
+            // 
+            this.tbxXnor1.Location = new System.Drawing.Point(287, 290);
+            this.tbxXnor1.MaxLength = 1;
+            this.tbxXnor1.Name = "tbxXnor1";
+            this.tbxXnor1.Size = new System.Drawing.Size(25, 20);
+            this.tbxXnor1.TabIndex = 23;
+            this.tbxXnor1.TextChanged += new System.EventHandler(this.tbxXnor1_TextChanged);
+            // 
+            // tbxXnor
+            // 
+            this.tbxXnor.Location = new System.Drawing.Point(287, 334);
+            this.tbxXnor.MaxLength = 1;
+            this.tbxXnor.Name = "tbxXnor";
+            this.tbxXnor.Size = new System.Drawing.Size(25, 20);
+            this.tbxXnor.TabIndex = 24;
+            this.tbxXnor.TextChanged += new System.EventHandler(this.tbxXnor2_TextChanged);
+            // 
+            // lblSvarXnor
+            // 
+            this.lblSvarXnor.AutoSize = true;
+            this.lblSvarXnor.Location = new System.Drawing.Point(512, 313);
+            this.lblSvarXnor.Name = "lblSvarXnor";
+            this.lblSvarXnor.Size = new System.Drawing.Size(13, 13);
+            this.lblSvarXnor.TabIndex = 25;
+            this.lblSvarXnor.Text = "?";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(557, 457);
+            this.ClientSize = new System.Drawing.Size(557, 602);
+            this.Controls.Add(this.lblSvarXnor);
+            this.Controls.Add(this.tbxXnor);
+            this.Controls.Add(this.tbxXnor1);
+            this.Controls.Add(this.pbxXnor);
+            this.Controls.Add(this.lblSvarXor);
+            this.Controls.Add(this.tbxXor1);
+            this.Controls.Add(this.tbxXor2);
+            this.Controls.Add(this.pbxXor);
+            this.Controls.Add(this.lblSvarNor);
+            this.Controls.Add(this.tbxNor1);
+            this.Controls.Add(this.tbxNor2);
+            this.Controls.Add(this.pbxNor);
             this.Controls.Add(this.lblSvarOr);
             this.Controls.Add(this.tbxOr1);
             this.Controls.Add(this.tbxOr2);
@@ -175,6 +315,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbxAnd)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxNand)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxOr)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxNor)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxXor)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxXnor)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -194,6 +337,18 @@
         private System.Windows.Forms.TextBox tbxOr2;
         private System.Windows.Forms.TextBox tbxOr1;
         private System.Windows.Forms.Label lblSvarOr;
+        private System.Windows.Forms.PictureBox pbxNor;
+        private System.Windows.Forms.TextBox tbxNor2;
+        private System.Windows.Forms.TextBox tbxNor1;
+        private System.Windows.Forms.Label lblSvarNor;
+        private System.Windows.Forms.PictureBox pbxXor;
+        private System.Windows.Forms.TextBox tbxXor2;
+        private System.Windows.Forms.TextBox tbxXor1;
+        private System.Windows.Forms.Label lblSvarXor;
+        private System.Windows.Forms.PictureBox pbxXnor;
+        private System.Windows.Forms.TextBox tbxXnor1;
+        private System.Windows.Forms.TextBox tbxXnor;
+        private System.Windows.Forms.Label lblSvarXnor;
     }
 }
 

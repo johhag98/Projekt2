@@ -66,7 +66,7 @@ namespace scr
 
             string OrText2 = tbxOr2.Text;
             int Or2;
-            bool OrTest21 = int.TryParse(OrText1, out Or2);
+            bool OrTest21 = int.TryParse(OrText2, out Or2);
             bool OrTest22 = Or2 == 1 || Or2 == 0;
 
 
@@ -106,7 +106,10 @@ namespace scr
             if (andTest11 == false || andTest12 == false || andTest21 == false || andTest22 == false)
             {
                 MessageBox.Show("Du måste skriva in antingen en etta eller nolla i båda rutorna, tack!", "Viktig information", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                lblNandSvar.Text = "X";
+                lblNandSvar.ForeColor = Color.Black;
             }
+
 
             if (and1 == 1 && and2 == 1)
             {
@@ -120,11 +123,37 @@ namespace scr
             }
         }
 
+        private void pbxNor_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pbxXor_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pbxXnor_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
+
 
 
         private void tbxAnd1_TextChanged(object sender, EventArgs e) { lblSvarAnd.Text = "?"; }
         private void tbxAnd2_TextChanged(object sender, EventArgs e) { lblSvarAnd.Text = "?"; }
         private void tbxNand1_TextChanged(object sender, EventArgs e) { lblSvarAnd.Text = "?"; }
         private void tbxNand2_TextChanged(object sender, EventArgs e) { lblSvarAnd.Text = "?"; }
+        private void tbxOr1_TextChangeed(object sender, EventArgs e) { lblSvarOr.Text = "?"; }
+        private void tbxOr2_TextChangeed(object sender, EventArgs e) { lblSvarOr.Text = "?"; }
+        private void tbxNor1_TextChanged(object sender, EventArgs e) { lblSvarNor.Text = "?"; }
+        private void tbxNor2_TextChanged(object sender, EventArgs e) { lblSvarNor.Text = "?"; }
+        private void tbxXor1_TextChanged(object sender, EventArgs e) { lblSvarXor.Text = "?"; }
+        private void tbxXor2_TextChanged(object sender, EventArgs e) { lblSvarXor.Text = "?"; }
+        private void tbxXnor1_TextChanged(object sender, EventArgs e) { lblSvarXnor.Text = "?"; }
+        private void tbxXnor2_TextChanged(object sender, EventArgs e) { lblSvarXnor.Text = "?"; }
+        
     }
 }
