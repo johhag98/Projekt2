@@ -34,8 +34,15 @@ namespace scr
 
             if (and1 == 1 && and2 == 1)
             {
-                lblSvarAnd.Text = "1" ; 
+                lblSvarAnd.Text = "1";
+                lblSvarAnd.ForeColor = Color.Green;
             }
+            else
+            {
+                lblSvarAnd.Text = "0";
+                lblSvarAnd.ForeColor = Color.Red;
+            }
+            
         }
     }
 }
