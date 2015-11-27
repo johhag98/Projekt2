@@ -27,9 +27,14 @@ namespace scr
             int and2 = int.Parse(tbxAnd2.Text);
             bool andTest12 = and2 == 1 || and2 == 0;
 
-            if (andTest2 == false || andTest2 == false)
+            if (andTest2 == false || andTest2 == false || andTest1 == false)
             {
                 MessageBox.Show("Du måste skriva in antingen en etta eller nolla i båda rutorna, tack!", "Viktig information", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+            if (and1 == 1 && and2 == 1)
+            {
+                lblSvarAnd.Text = "1" ; 
             }
         }
     }
