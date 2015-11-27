@@ -37,8 +37,13 @@
             this.tbxNand2 = new System.Windows.Forms.TextBox();
             this.tbxNand1 = new System.Windows.Forms.TextBox();
             this.lblNandSvar = new System.Windows.Forms.Label();
+            this.pbxOr = new System.Windows.Forms.PictureBox();
+            this.tbxOr2 = new System.Windows.Forms.TextBox();
+            this.tbxOr1 = new System.Windows.Forms.TextBox();
+            this.lblSvarOr = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbxAnd)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxNand)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxOr)).BeginInit();
             this.SuspendLayout();
             // 
             // tbxAnd1
@@ -112,11 +117,50 @@
             this.lblNandSvar.TabIndex = 9;
             this.lblNandSvar.Text = "?";
             // 
+            // pbxOr
+            // 
+            this.pbxOr.Image = ((System.Drawing.Image)(resources.GetObject("pbxOr.Image")));
+            this.pbxOr.Location = new System.Drawing.Point(43, 133);
+            this.pbxOr.Name = "pbxOr";
+            this.pbxOr.Size = new System.Drawing.Size(190, 120);
+            this.pbxOr.TabIndex = 10;
+            this.pbxOr.TabStop = false;
+            this.pbxOr.Click += new System.EventHandler(this.pbxOr_Click);
+            // 
+            // tbxOr2
+            // 
+            this.tbxOr2.Location = new System.Drawing.Point(12, 205);
+            this.tbxOr2.MaxLength = 1;
+            this.tbxOr2.Name = "tbxOr2";
+            this.tbxOr2.Size = new System.Drawing.Size(25, 20);
+            this.tbxOr2.TabIndex = 11;
+            // 
+            // tbxOr1
+            // 
+            this.tbxOr1.Location = new System.Drawing.Point(12, 162);
+            this.tbxOr1.MaxLength = 1;
+            this.tbxOr1.Name = "tbxOr1";
+            this.tbxOr1.Size = new System.Drawing.Size(25, 20);
+            this.tbxOr1.TabIndex = 12;
+            // 
+            // lblSvarOr
+            // 
+            this.lblSvarOr.AutoSize = true;
+            this.lblSvarOr.Location = new System.Drawing.Point(239, 186);
+            this.lblSvarOr.Name = "lblSvarOr";
+            this.lblSvarOr.Size = new System.Drawing.Size(13, 13);
+            this.lblSvarOr.TabIndex = 13;
+            this.lblSvarOr.Text = "?";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(557, 457);
+            this.Controls.Add(this.lblSvarOr);
+            this.Controls.Add(this.tbxOr1);
+            this.Controls.Add(this.tbxOr2);
+            this.Controls.Add(this.pbxOr);
             this.Controls.Add(this.lblNandSvar);
             this.Controls.Add(this.tbxNand1);
             this.Controls.Add(this.tbxNand2);
@@ -130,6 +174,7 @@
             this.Text = "Projekt";
             ((System.ComponentModel.ISupportInitialize)(this.pbxAnd)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxNand)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxOr)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -145,6 +190,10 @@
         private System.Windows.Forms.TextBox tbxNand2;
         private System.Windows.Forms.TextBox tbxNand1;
         private System.Windows.Forms.Label lblNandSvar;
+        private System.Windows.Forms.PictureBox pbxOr;
+        private System.Windows.Forms.TextBox tbxOr2;
+        private System.Windows.Forms.TextBox tbxOr1;
+        private System.Windows.Forms.Label lblSvarOr;
     }
 }
 

@@ -97,7 +97,7 @@ namespace scr
             bool andTest11 = int.TryParse(andText1, out and1);
             bool andTest12 = and1 == 1 || and1 == 0;
 
-            string andText2= tbxNand2.Text;
+            string andText2 = tbxNand2.Text;
             int and2;
             bool andTest21 = int.TryParse(andText2, out and2);
             bool andTest22 = and2 == 1 || and2 == 0;
@@ -120,5 +120,11 @@ namespace scr
             }
         }
 
+
+
+        private void tbxAnd1_TextChanged(object sender, EventArgs e) { lblSvarAnd.Text = "?"; }
+        private void tbxAnd2_TextChanged(object sender, EventArgs e) { lblSvarAnd.Text = "?"; }
+        private void tbxNand1_TextChanged(object sender, EventArgs e) { lblSvarAnd.Text = "?"; }
+        private void tbxNand2_TextChanged(object sender, EventArgs e) { lblSvarAnd.Text = "?"; }
     }
 }
