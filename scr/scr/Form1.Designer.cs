@@ -90,8 +90,9 @@
             this.Controls.Add(this.tbxAnd2);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.tbxAnd1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Projekt";
             ((System.ComponentModel.ISupportInitialize)(this.pbxAnd)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
