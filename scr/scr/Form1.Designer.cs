@@ -48,6 +48,7 @@
             this.tbxAnd1.Name = "tbxAnd1";
             this.tbxAnd1.Size = new System.Drawing.Size(25, 20);
             this.tbxAnd1.TabIndex = 0;
+            this.tbxAnd1.TextChanged += new System.EventHandler(this.tbxAnd1_TextChanged);
             // 
             // tbxAnd2
             // 

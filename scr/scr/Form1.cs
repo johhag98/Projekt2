@@ -77,5 +77,31 @@ namespace scr
                 lblNandSvar.ForeColor = Color.Green;
             }
         }
+
+
+
+
+
+
+
+
+
+
+        private void tbxAnd1_TextChanged(object sender, EventArgs e)
+        {
+            lblSvarAnd.Text = "?";
+        }
+        private void tbxAnd2_TextChanged(object sender, EventArgs e)
+        {
+            lblSvarAnd.Text = "?";
+        }
+        private void tbxNand1_TextChanged(object sender, EventArgs e)
+        {
+            lblSvarAnd.Text = "?";
+        }
+        private void tbxNand2_TextChanged(object sender, EventArgs e)
+        {
+            lblSvarAnd.Text = "?";
+        }
     }
 }
