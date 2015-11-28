@@ -125,18 +125,131 @@ namespace scr
 
         private void pbxNor_Click(object sender, EventArgs e)
         {
+            string andText1 = tbxNor1.Text;
+            int and1;
+            bool andTest11 = int.TryParse(andText1, out and1);
+            bool andTest12 = and1 == 1 || and1 == 0;
 
+            string andText2 = tbxNor2.Text;
+            int and2;
+            bool andTest21 = int.TryParse(andText2, out and2);
+            bool andTest22 = and2 == 1 || and2 == 0;
+
+
+            if (andTest11 == false || andTest12 == false || andTest21 == false || andTest22 == false)
+            {
+                MessageBox.Show("Du måste skriva in antingen en etta eller nolla i båda rutorna, tack!", "Viktig information", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                lblNandSvar.Text = "X";
+                lblNandSvar.ForeColor = Color.Black;
+            }
+
+
+            if (and1 == 1 || and2 == 1)
+            {
+                lblSvarNor.Text = "0";
+                lblSvarNor.ForeColor = Color.Red;
+            }
+            else
+            {
+                lblSvarNor.Text = "1";
+                lblSvarNor.ForeColor = Color.Green;
+            }
         }
 
         private void pbxXor_Click(object sender, EventArgs e)
         {
+            string andText1 = tbxXor1.Text;
+            int and1;
+            bool andTest11 = int.TryParse(andText1, out and1);
+            bool andTest12 = and1 == 1 || and1 == 0;
 
+            string andText2 = tbxXor2.Text;
+            int and2;
+            bool andTest21 = int.TryParse(andText2, out and2);
+            bool andTest22 = and2 == 1 || and2 == 0;
+
+
+            if (andTest11 == false || andTest12 == false || andTest21 == false || andTest22 == false)
+            {
+                MessageBox.Show("Du måste skriva in antingen en etta eller nolla i båda rutorna, tack!", "Viktig information", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                lblNandSvar.Text = "X";
+                lblNandSvar.ForeColor = Color.Black;
+            }
+
+
+            if (and1 == and2)
+            {
+                lblSvarXor.Text = "0";
+                lblSvarXor.ForeColor = Color.Red;
+            }
+            else
+            {
+                lblSvarXor.Text = "1";
+                lblSvarXor.ForeColor = Color.Green;
+            }
         }
 
         private void pbxXnor_Click(object sender, EventArgs e)
         {
+            string andText1 = tbxXnor1.Text;
+            int and1;
+            bool andTest11 = int.TryParse(andText1, out and1);
+            bool andTest12 = and1 == 1 || and1 == 0;
 
+            string andText2 = tbxXnor2.Text;
+            int and2;
+            bool andTest21 = int.TryParse(andText2, out and2);
+            bool andTest22 = and2 == 1 || and2 == 0;
+
+
+            if (andTest11 == false || andTest12 == false || andTest21 == false || andTest22 == false)
+            {
+                MessageBox.Show("Du måste skriva in antingen en etta eller nolla i båda rutorna, tack!", "Viktig information", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                lblNandSvar.Text = "X";
+                lblNandSvar.ForeColor = Color.Black;
+            }
+
+
+            if (and1 == and2)
+            {
+                lblSvarXnor.Text = "1";
+                lblSvarXnor.ForeColor = Color.Green;
+            }
+            else
+            {
+                lblSvarXnor.Text = "0";
+                lblSvarXnor.ForeColor = Color.Red;
+            }
         }
+
+        private void pbxNot_Click(object sender, EventArgs e)
+        {
+            string andText1 = tbxNot.Text;
+            int and1;
+            bool andTest11 = int.TryParse(andText1, out and1);
+            bool andTest12 = and1 == 1 || and1 == 0;
+
+
+            if (andTest11 == false || andTest12 == false)
+            {
+                MessageBox.Show("Du måste skriva in antingen en etta eller nolla i båda rutorna, tack!", "Viktig information", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                lblNandSvar.Text = "X";
+                lblNandSvar.ForeColor = Color.Black;
+            }
+
+
+            if (and1 == 0)
+            {
+                lblSvarNot.Text = "1";
+                lblSvarNot.ForeColor = Color.Green;
+            }
+            else
+            {
+                lblSvarNot.Text = "0";
+                lblSvarNot.ForeColor = Color.Red;
+            }
+        }
+
 
 
 
@@ -154,6 +267,6 @@ namespace scr
         private void tbxXor2_TextChanged(object sender, EventArgs e) { lblSvarXor.Text = "?"; }
         private void tbxXnor1_TextChanged(object sender, EventArgs e) { lblSvarXnor.Text = "?"; }
         private void tbxXnor2_TextChanged(object sender, EventArgs e) { lblSvarXnor.Text = "?"; }
-        
+        private void tbxNot_TextChanged(object sender, EventArgs e) { lblSvarNot.Text = "?"; }
     }
 }
