@@ -316,7 +316,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(557, 602);
+            this.ClientSize = new System.Drawing.Size(557, 523);
             this.Controls.Add(this.lblSvarNot);
             this.Controls.Add(this.tbxNot);
             this.Controls.Add(this.pbxNot);
@@ -345,6 +345,7 @@
             this.Controls.Add(this.tbxAnd2);
             this.Controls.Add(this.tbxAnd1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "Projekt";
             ((System.ComponentModel.ISupportInitialize)(this.pbxAnd)).EndInit();
