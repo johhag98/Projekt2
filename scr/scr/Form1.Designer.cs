@@ -85,6 +85,7 @@
             // pbxAnd
             // 
             this.pbxAnd.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbxAnd.BackgroundImage")));
+            this.pbxAnd.Image = global::scr.Properties.Resources.Kopia_av_1and;
             this.pbxAnd.Location = new System.Drawing.Point(43, 12);
             this.pbxAnd.Name = "pbxAnd";
             this.pbxAnd.Size = new System.Drawing.Size(190, 115);
@@ -103,7 +104,7 @@
             // 
             // pbxNand
             // 
-            this.pbxNand.Image = ((System.Drawing.Image)(resources.GetObject("pbxNand.Image")));
+            this.pbxNand.Image = global::scr.Properties.Resources.Kopia_av_1nand;
             this.pbxNand.Location = new System.Drawing.Point(318, 12);
             this.pbxNand.Name = "pbxNand";
             this.pbxNand.Size = new System.Drawing.Size(188, 116);
@@ -138,7 +139,7 @@
             // 
             // pbxOr
             // 
-            this.pbxOr.Image = ((System.Drawing.Image)(resources.GetObject("pbxOr.Image")));
+            this.pbxOr.Image = global::scr.Properties.Resources.Kopia_av_2or;
             this.pbxOr.Location = new System.Drawing.Point(43, 134);
             this.pbxOr.Name = "pbxOr";
             this.pbxOr.Size = new System.Drawing.Size(190, 120);
@@ -175,7 +176,7 @@
             // 
             // pbxNor
             // 
-            this.pbxNor.Image = ((System.Drawing.Image)(resources.GetObject("pbxNor.Image")));
+            this.pbxNor.Image = global::scr.Properties.Resources.Kopia_av_2nor;
             this.pbxNor.Location = new System.Drawing.Point(318, 134);
             this.pbxNor.Name = "pbxNor";
             this.pbxNor.Size = new System.Drawing.Size(188, 119);
@@ -212,7 +213,7 @@
             // 
             // pbxXor
             // 
-            this.pbxXor.Image = ((System.Drawing.Image)(resources.GetObject("pbxXor.Image")));
+            this.pbxXor.Image = global::scr.Properties.Resources.Kopia_av_4xor;
             this.pbxXor.Location = new System.Drawing.Point(43, 260);
             this.pbxXor.Name = "pbxXor";
             this.pbxXor.Size = new System.Drawing.Size(190, 118);
@@ -249,7 +250,7 @@
             // 
             // pbxXnor
             // 
-            this.pbxXnor.Image = ((System.Drawing.Image)(resources.GetObject("pbxXnor.Image")));
+            this.pbxXnor.Image = global::scr.Properties.Resources.Kopia_av_4xnor;
             this.pbxXnor.Location = new System.Drawing.Point(318, 260);
             this.pbxXnor.Name = "pbxXnor";
             this.pbxXnor.Size = new System.Drawing.Size(188, 118);
@@ -286,7 +287,7 @@
             // 
             // pbxNot
             // 
-            this.pbxNot.Image = ((System.Drawing.Image)(resources.GetObject("pbxNot.Image")));
+            this.pbxNot.Image = global::scr.Properties.Resources.Kopia_av_3not;
             this.pbxNot.Location = new System.Drawing.Point(43, 384);
             this.pbxNot.Name = "pbxNot";
             this.pbxNot.Size = new System.Drawing.Size(190, 116);

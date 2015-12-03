@@ -81,10 +81,28 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Kopia av 2or.png" />
+    <None Include="Resources\and.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kopia av 1and.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Kopia av 1nand.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kopia av 2nor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kopia av 2or.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kopia av 3not.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kopia av 4xnor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kopia av 4xor.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

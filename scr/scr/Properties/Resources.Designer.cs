@@ -63,9 +63,29 @@ namespace scr.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Kopia_av_1and {
+            get {
+                object obj = ResourceManager.GetObject("Kopia_av_1and", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Kopia_av_1nand {
             get {
-                object obj = ResourceManager.GetObject("Kopia av 1nand", resourceCulture);
+                object obj = ResourceManager.GetObject("Kopia_av_1nand", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Kopia_av_2nor {
+            get {
+                object obj = ResourceManager.GetObject("Kopia_av_2nor", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -75,7 +95,37 @@ namespace scr.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap Kopia_av_2or {
             get {
-                object obj = ResourceManager.GetObject("Kopia av 2or", resourceCulture);
+                object obj = ResourceManager.GetObject("Kopia_av_2or", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Kopia_av_3not {
+            get {
+                object obj = ResourceManager.GetObject("Kopia_av_3not", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Kopia_av_4xnor {
+            get {
+                object obj = ResourceManager.GetObject("Kopia_av_4xnor", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Kopia_av_4xor {
+            get {
+                object obj = ResourceManager.GetObject("Kopia_av_4xor", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
